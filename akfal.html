@@ -1,0 +1,243 @@
+<html lang="ar">
+	<head>
+		<meta charset="utf-8">
+		<title>  </title>
+		<script type="text/javascript" >
+
+
+		days = new Array('Monday','Tuesday','Wedansday','Thursday','Friday','Saturday','Sunday'); 
+
+
+		function show_date(){
+			var get_my_date = new Date(); 
+			var today = get_my_date.getDay()-1; 
+			var today =days[today];
+			var day =get_my_date.getDate(); 
+			var month = get_my_date.getMonth()+1; 
+			var year =get_my_date.getFullYear(); 
+
+
+			var hour = get_my_date.getHours(); 
+			var minute = get_my_date.getMinutes();  
+			var second = get_my_date.getSeconds();   
+			var form = hour +':' +minute +':'+second+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';  
+				form += today + '   '+day +'/'+month+'/'+year;
+			    
+
+
+
+			document.getElementById('clock_date').innerHTML = form;  
+
+
+
+
+
+
+		}
+		 my_loop=setInterval('show_date()',1000); 
+	</script>
+			
+		
+			
+	
+		<link rel="stylesheet" type="text/css" href="akfal.css">
+	</head>
+	<body>
+	<div class="master"> 
+		<div class="head" id="head">
+		<div class="logo">
+		<img style="width: 140px; padding-left: 30px;" src="logo1.jpg">
+			</div>
+			<div class="menu_site">
+				<ul class="menu">
+					<li><a href="#con" >عن الموقع ...</a> </li>
+					
+					<li><a href="#mmm">دار الأيتام في الديوانية</a>  </li>
+					<li><a href="#file:///C:/AppServ/www/code_for_iraq/donating.html#">الخدمات</a></li>
+					<li><a href="#volunter">التطوع في الهيئة</a></li>
+					<li><a href="#donating">تبرع الآن</a></li>
+					<li><a href="#servies">تواصل</a></li>
+					
+				
+				
+				</ul>
+			</div>
+			<div class="login">دخول الأعضاء  <br>
+		البريد الألكتروني  : <input  type="text"> <br><br>
+				كلمة المرور &nbsp;&nbsp;  &nbsp; &nbsp;:     <input type="password"> <br>
+				  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input style="font-weight: bold; background-color: #0B243B;color: white;" type="button" value="تسجيل دخول" onClick="">
+				
+			</div>
+		</div>
+		<div class="mini_head" id="mini_head"> قال رسول الله ﷺ: (أنا وكافل اليتيم في الجنة هكذا، وأشار بالسبابة والوسطى وفرج بينهما)   
+		
+		
+		<div id="clock_date" style="position: relative;bottom: 30px; float: left; left: 20px; top: 1px;">  </div>
+		
+		</div>
+		<div class="side"> 
+			<div class="side_con">
+			<div style="margin: 10px; "><h1 style="color: #0B243B;">بيانات الكافل</h1>  
+				 ________________________________ <br><br>
+				اسم الكامل &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <input type="text"> <br><br>
+				الــدولة  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"> <br><br>
+				رقم الهاتف &nbsp; &nbsp;&nbsp; &nbsp; <input type="text"><br> <br>
+                 البريد الالكتروني <input type="text"> <br><br>
+				عدد الايتام &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<input type="text"> <br><br>
+				نوع الكفاله&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; <select style="width: 155px;" >
+							<option>مستمرة</option>
+							<option>منقطعه</option>
+							
+						</select> <br><br>
+				<input type="button" value="أرسل"  style="width: 50px; font-weight: bold; font-size: 12pt; background-color: #0B243B; color: white;">
+				
+					
+				</div>
+			
+						<div class="donating" id="donating"> 
+							<fieldset>
+							<h1 style="color: #0B243B;"> تبرع الآن </h1>
+							الأسم &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"> <br><br>
+							البريد الألكتروني  <input type="text"> <br><br>
+
+							الهاتف&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text"> <br><br>
+							المبلغ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"> <br><br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="تبرع" style="width: 100px;height:50px; font-size: 18pt; background-color: #0B243B;; color: white; font-weight: bold;"  >
+
+
+				</fieldset>
+				
+				       </div>
+				
+
+			</div>
+		
+		</div>
+		<div class="con" id="con"> 
+			
+			<div class="con_con" id="con_con" > <h2 style="position: relative;left: 450px;color: #0B243B;">عن الموقع </h2>
+				__________________________________<br>
+				<h3>يمكن من خلال هذا الموقع التعاون مع دار الأيتام في الديوانية  ,نشر ما يحتاجونه
+					وايضا لتتمكن الناس من مساعدتهم وتقديم العون للاطفال من ملابس وتجهيزات دراسيه وغيرها ...</h3> <br><br>
+				<img src="yateem.jpg" style="width: 920px;">
+				<fieldset class="doc">
+				<div id="volunter">
+					<h1 style="color: #0B243B;">التطوع في الهيئة</h1> <br>
+					___________________ <br>
+					<h2 style="background-color: #0B243B;; width: 150px; color: white;"> البيانات الشخصية</h2>
+					 الأسم الثلاثي &nbsp; &nbsp;&nbsp; <input type="text"  > <br><br>
+					 المحافظة&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  &nbsp; <input type="text" > <br><br>
+					العمر&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <input type="text" > <br><br>
+					الجنس&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <select style="width: 150px;">
+					<option>ذكر</option>
+					<option>أنثى</option>
+					
+					
+					</select  > <br><br>
+		الحالة الاجتماعية <select style="width: 150px;">
+					<option>أعزب</option>
+					<option>متزوج</option>
+					<option>مطلق</option>
+					<option>ارمل</option>
+
+
+					
+					</select> <br><br>
+					المؤهل العلمي &nbsp; &nbsp; <input type="text" > <br><br>
+					 جهة العمل&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <input type="text" > <br><br> <br>
+					<h2 style="background-color: #0B243B;; width: 150px; color: white;" > بيانات الاتصال</h2>
+					البريد الألكتروني&nbsp; &nbsp; <input type="text" style="width: 200px;" > <br><br>
+					 رقم الهاتف&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <input type="text" style="width: 200px;" > <br><br> <br>
+					<input type="button" value="تأكيد" style="width: 100px; height: 40px; font-size: 14pt;font-weight: bold; background-color: #0B243B; color: white;" >
+					
+					
+				
+				
+				</div>
+				<div class="goals_volunter">
+				
+				
+				<h2> من نحن..؟</h2>
+					تقوم إدارة المتطوعين باستقطاب المتطوعين من مختلف المراحل العمرية وتعمل على التواصل معهم وتدريبهم وتفعيلهم في مختلف برامج وأنشطة الهيئة الإنسانية من خلال استثمار طاقاتهم وخبراتهم ومهارتهم المتنوعة لتحقيق الأهداف الإنسانية، حيث تعتبر إدارة المتطوعين المورد البشري الثاني للهيئة لتنفيذ أنشطتها وبرامجها تحقيقاً لأهدافها الاستراتيجية
+				
+				</div>
+			
+				</fieldset>
+			
+			
+			
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+			<br>
+		
+		
+		</div>
+		<div  class="footer">
+			<table class="table_footer"  align="center">
+				<tr> 
+				<th> القائمة </th>
+				<th> عن الموقع ... </th>
+				<th> الخدمات </th>
+				</tr>
+				
+				<tr>
+					<td> <a href="#mini_head">الرئيسية</a></td>
+					<td> <a href="#">التأسيس</a> </td>
+					<td> <a href="#">تطوع الآن</a></td>
+				</tr>
+				
+				<tr>
+					<td>  <a href="#">دار الأيتام في الديوانية</a></td>
+					<td> <a href="#">مسارنا</a></td>
+					<td> <a href="#">الوضائف الشاغرة</a></td>
+				</tr>
+				
+				
+				<tr>
+					<td>  <a href="#volunter">التطوع في الهيئة</a></td>
+					<td> <a href="#">أهدافنا</a></td>
+					<td> <a href="#">المساعدات المحلية</a></td>
+				</tr>
+				
+				
+				<tr>
+					<td>  <a href="#servies">تواصل</a></td>
+					<td> <a href="#">المباديء الاساسية</a></td>
+					<td> <a href="#donating">تبرع الآن</a></td>
+				</tr>
+			
+			
+			
+			
+			
+			
+			</table>
+			<div class="servies" id="servies">  البريد الألكتروني : akfa_yateem@gmail.com <br><br>
+			خدمة العملاء : 234-876
+			</div>
+			<div class="mini_footer"> Copyright ©2019 - Ahmed Abid - Privacy Policy  </div>
+			
+		
+		</div>
+		
+	</div>
+	
+	
+	</body>
+</html>

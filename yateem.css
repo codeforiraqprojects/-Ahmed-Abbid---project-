@@ -1,0 +1,1353 @@
+body{
+	background-color: white;
+}
+
+
+/*ul{
+	margin: 0px;
+	padding: 0px;
+}*/
+.master{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.title_header{
+	width: 100%;
+	background-color: #0B3861;
+	height: 50px;
+	float: right;
+	direction: rtl;
+	position: fixed;
+	z-index: 2;
+	
+}
+
+.title_header_text{
+	float: left;
+	position: relative;
+	left: 1175px;
+	color: white;
+	font-size: 18pt;
+	top: 16px;
+	font-weight: bold;
+	
+}
+
+.menu_header{
+	background-color: white;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 50px;
+	float: right;
+	direction: rtl;
+	font-size: 16pt;
+	z-index: 2;
+	border: solid #0B3861;
+	
+	
+}
+.menu_header a:link{
+	color:  #0B3861;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+.menu_header a:hover{
+	color: #362B2C;
+}
+
+
+.menu li{
+	display: inline;
+	padding: 20px;
+	
+}
+
+
+.menu_header  li ul{
+	visibility:hidden;
+	position: absolute;
+	opacity: 0;
+	font-size: 12pt;
+	padding: 2px;
+	top: 50px;
+	right: 190px;
+	text-decoration: underline;
+	
+}
+
+
+
+.menu li:hover ul {
+	visibility:visible;
+	position: absolute;
+    opacity: 1;
+	display:grid;
+	-webkit-transition:1s;
+	
+	top: 70;
+
+	
+
+}
+
+.menu_header  li ul li{
+	background-color: #fff;
+	height: 0px;
+	position: relative;
+
+	
+	
+}
+
+.menu_header  li ul li:hover{
+	text-decoration: underline;
+	color: black;
+	font-weight:bold;
+	font-size: 14pt;
+	
+	
+}
+
+
+
+
+.side{
+	float: right;
+	position: relative;
+	top: 130px;
+	/*background-color: red;*/
+	/*width: 40%;*/
+	z-index: 0;
+	width: 80%;
+	right: 10%;
+	
+	
+	
+}
+
+
+.side_content{
+	position: relative;
+	width: 60%;
+	/*background-color: yellow;*/
+	direction: rtl;
+	font-size: 16pt;
+	float: right;
+	right: 10px;
+	/*color: #0B3861;*/
+	font-weight: bold;
+	color: #0B3861;
+	
+}
+
+.ph_main{
+	float: left;
+	
+}
+
+
+
+
+.s_tit{
+	float: right;
+	color: darkred;
+}
+
+
+
+
+
+
+.s_link{
+	color: blue;
+	float: left;
+	left: 100px;
+	position: relative;
+	
+	
+}
+
+
+
+
+
+
+
+.akfal{
+	background-color:#0B3861;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.content{
+	position: relative;
+	top: 110px;
+	z-index: -5;
+	/*background-color: blue;*/
+	/*width: 40%;*/
+	float: left;
+	padding-bottom: 140px;
+}
+
+
+
+
+.footer{
+
+	width: 100%;
+	position: relative;
+	background-color:#00111F;
+	float: left;
+	height: 180px;
+	color: white;
+	z-index: 0;
+	bottom: 0px;
+	
+	
+}
+.content_footer{
+	color: wheat;
+	float: inherit;
+	position: relative;
+	top: 30px;
+	direction: rtl;
+	left: 550px;
+	bottom: 20px;
+	
+	
+}
+
+.how{
+	float: right;
+	width: 240px;
+	direction: rtl;
+	position: relative;
+	right: 15px;
+	text-align: right;
+	font-size: 13pt;
+}
+
+
+/*______________________________________model sign in  ____________________________________ */
+.model_container{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	background:rgb(1,50,77,0.3);
+	
+	/*transition: all 500ms ease;*/
+	
+	float: right;
+	
+}
+
+.model_container:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.model{
+	width: 350px;
+	height: 350px;
+	margin: auto;
+	position: absolute;
+	top: 40px; bottom: 0px;
+	right: 0px; left: 0px;
+	background: #0B3861;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 20px;
+	z-index: 3;
+	
+	
+}
+
+
+.model_heading{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	height: 60px;
+	margin-bottom: 30px;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 20pt;
+	font-family: big john;
+	/*border-bottom: 2px solid #fefefe;*/
+	float: right;
+	direction: rtl;
+}
+
+
+.input_sign input{
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	height: 50px;
+	border: 0px;
+	font-family: georgia;
+	font-size: 11pt;
+	text-align: right;
+	direction: rtl;
+}
+
+.btnrig{
+	background-color:green;
+	color: white;
+	font-family: georgia;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+.close{
+	color: white;
+	position: absolute;
+	border: 2px solid #333;
+	padding: 7px 9px 11px 9px;
+	font-family: big john;
+	background: black;
+	text-decoration: none;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	/*transition: background 500ms;*/
+	
+	
+	
+	
+	
+}
+
+.close:hover{
+	background: red;
+	cursor: pointer;
+}
+
+
+
+
+.have_account{
+	color :white;
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+	position: absolute;
+	left: 90px;
+	text-decoration: none;
+	font-size: 13pt;
+	width: 100%;
+	
+}
+.have_account:hover{
+	color: red;
+	
+}
+
+
+.forget_pass{
+	
+	color :white;
+	display: inline-block;
+	margin-top: 0px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+.forget_pass:hover{
+	color: red;
+	
+}
+
+/* ______________________________________________end sign in________________________________________*/
+
+/*______________________________________Rigister  ____________________________________ */
+.Rigister_model_container{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	background:rgb(1,50,77,0.3);
+	
+	
+	/*transition: all 500ms ease;*/
+	
+	
+	
+}
+
+.Rigister_model_container:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.Rigister_model{
+	width: 350px;
+	height: 400px;
+	margin: auto;
+	position: absolute;
+	top: 100px; bottom: 0px;
+	right: 0px; left: 0px;
+	background: #0B3861;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 20px;
+	
+	
+}
+
+
+.Rigister_model_heading{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	height: 60px;
+	margin-bottom: 30px;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 20pt;
+	font-family: big john;
+	/*border-bottom: 2px solid #fefefe;*/
+	float: right;
+	direction: rtl;
+}
+
+
+.input_rigister input[type="text"],input[type="password"],input[type="submit"]{
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	height: 50px;
+	border: 0px;
+	font-family: georgia;
+	font-size: 11pt;
+	text-align: right;
+	direction: rtl;
+}
+
+
+
+.g_rigister{
+	float: right;
+	direction: rtl;
+	font-size: 16pt;
+	color: white;
+}
+
+
+.Rigister_btnrig{
+	background-color:green;
+	color: white;
+	font-family: georgia;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16pt;
+}
+
+
+.Rigister_close{
+	color: white;
+	position: absolute;
+	border: 2px solid #333;
+	padding: 7px 9px 11px 9px;
+	font-family: big john;
+	background: black;
+	text-decoration: none;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	/*transition: background 500ms;*/
+	
+	
+	
+	
+	
+}
+
+.Rigister_close:hover{
+	background: red;
+	cursor: pointer;
+}
+
+
+
+
+
+
+.Rigister_have_account{
+	
+	color :white;
+	display: inline-block;
+	margin-top: 0px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+
+.Rigister_have_account:hover{
+	
+	color:red;
+}
+
+/* ______________________________________________end Rigister________________________________________*/
+
+
+/*______________________________________model how  ____________________________________ */
+.model_container_how{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	background:rgb(1,50,77,0.3);
+	
+	/*transition: all 500ms ease;*/
+	
+	float: right;
+	
+}
+
+.model_container_how:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.model_how{
+	width: 300px;
+	height: 370px;
+	margin: auto;
+	position: absolute;
+	top: 100px; bottom: 0px;
+	right: 0px; left: 0px;
+	background: #0B3861;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 20px;
+	
+	
+}
+
+
+.model_heading_how{
+	height: 60px;
+	color: white;;
+	text-align: center;
+	font-size: 20pt;
+	font-family: big john;
+	/*border-bottom: 2px solid #fefefe;*/
+	direction: rtl;
+	position: relative;
+	top: -40px;
+	text-align: center;
+	
+	
+}
+
+
+.content_how{
+	font-weight: 50;
+	width: 100%;
+	height: 140px;
+	font-size: 16pt;
+	text-align: center;
+	direction: rtl;
+	color: black;
+	position: relative;
+	top: -50px;
+	background-color: white;
+	padding-top: 10px;
+}
+
+.btnrig_how{
+	background-color:green;
+	color: white;
+	font-family: georgia;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+.close_how{
+	color: white;
+	position: absolute;
+	border: 2px solid #333;
+	padding: 7px 9px 11px 9px;
+	font-family: big john;
+	background: black;
+	text-decoration: none;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	/*transition: background 500ms;*/
+	
+	
+	
+	
+	
+}
+
+.close_how:hover{
+	background: red;
+	cursor: pointer;
+}
+
+
+
+
+.have_account_how{
+	color :white;
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+	position: absolute;
+	left: 90px;
+	text-decoration: none;
+	font-size: 13pt;
+	width: 100%;
+	
+}
+.have_account_how:hover{
+	color: red;
+	
+}
+
+
+.forget_pass_how{
+	
+	color :white;
+	display: inline-block;
+	margin-top: 0px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+.forget_pass_how:hover{
+	color: red;
+	
+}
+
+/* ______________________________________________end how________________________________________*/
+
+
+
+
+
+
+
+
+/*______________________________________model init  ____________________________________ */
+.model_container_init{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	background:rgb(1,50,77,0.3);
+	
+	/*transition: all 500ms ease;*/
+	
+	float: right;
+	
+}
+
+.model_container_init:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.model_init{
+	width: 450px;
+	height: 400px;
+	margin: auto;
+	position: absolute;
+	top: 120px; bottom: 0px;
+	right: 0px; left: 0px;
+	background: #0B3861;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 20px;
+	z-index: 6;
+	
+	
+}
+
+
+.model_heading_init{
+	height: 60px;
+	color: white;;
+	text-align: center;
+	font-size: 20pt;
+	font-family: big john;
+	/*border-bottom: 2px solid #fefefe;*/
+	direction: rtl;
+	position: relative;
+	top: -40px;
+	text-align: center;
+	
+	
+}
+
+
+.content_init{
+	font-weight: 50;
+	width: 100%;
+	height: 180px;
+	font-size: 16pt;
+	text-align: center;
+	direction: rtl;
+	color: black;
+	position: relative;
+	top: -50px;
+	background-color: white;
+	padding-top: 10px;
+}
+
+.btnrig_init{
+	background-color:green;
+	color: white;
+	font-family: georgia;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+.close_init{
+	color: white;
+	position: absolute;
+	border: 2px solid #333;
+	padding: 7px 9px 11px 9px;
+	font-family: big john;
+	background: black;
+	text-decoration: none;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	/*transition: background 500ms;*/
+	
+	
+	
+	
+	
+}
+
+.close_init:hover{
+	background: red;
+	cursor: pointer;
+}
+
+
+
+
+.have_account_init{
+	color :white;
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+	position: absolute;
+	left: 90px;
+	text-decoration: none;
+	font-size: 13pt;
+	width: 100%;
+	
+}
+.have_account_init:hover{
+	color: red;
+	
+}
+
+
+.forget_pass_init{
+	
+	color :white;
+	display: inline-block;
+	margin-top: 0px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+.forget_pass_init:hover{
+	color: red;
+	
+}
+
+/* ______________________________________________end init________________________________________*/
+
+
+
+
+
+/*______________________________________model self  ____________________________________ */
+.model_container_self{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	background:rgb(1,50,77,0.3);
+	
+	/*transition: all 500ms ease;*/
+	
+	float: right;
+	
+}
+
+.model_container_self:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.model_self{
+	width: 400px;
+	height: 350px;
+	margin: auto;
+	position: absolute;
+	top: 120px; bottom: 0px;
+	right: 0px; left: 0px;
+	background: #0B3861;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 20px;
+	z-index: 6;
+	
+	
+}
+
+
+.model_heading_self{
+	height: 60px;
+	color: white;;
+	text-align: center;
+	font-size: 20pt;
+	font-family: big john;
+	/*border-bottom: 2px solid #fefefe;*/
+	direction: rtl;
+	position: relative;
+	top: -40px;
+	text-align: center;
+	
+	
+}
+
+
+.content_self{
+	font-weight: 50;
+	width: 100%;
+	height: 180px;
+	font-size: 16pt;
+	text-align: right;
+	direction: rtl;
+	color: black;
+	position: relative;
+	top: -50px;
+	background-color: white;
+	padding-top: 10px;
+	padding-right: 5px;
+}
+
+.btnrig_self{
+	background-color:green;
+	color: white;
+	font-family: georgia;
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+.close_self{
+	color: white;
+	position: absolute;
+	border: 2px solid #333;
+	padding: 7px 9px 11px 9px;
+	font-family: big john;
+	background: black;
+	text-decoration: none;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	/*transition: background 500ms;*/
+	
+	
+	
+	
+	
+}
+
+.close_self:hover{
+	background: red;
+	cursor: pointer;
+}
+
+
+
+
+.have_account_self{
+	color :white;
+	display: inline-block;
+	margin-top: 15px;
+	float: right;
+	position: absolute;
+	left: 90px;
+	text-decoration: none;
+	font-size: 13pt;
+	width: 100%;
+	
+}
+.have_account_self:hover{
+	color: red;
+	
+}
+
+
+.forget_pass_self{
+	
+	color :white;
+	display: inline-block;
+	margin-top: 0px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+.forget_pass_self:hover{
+	color: red;
+	
+}
+
+.social_media{
+	width: 40px;
+	display: inline;
+	top: 0px;
+	position: relative;
+}
+
+.social_media a img:hover{
+	
+	top: -25px;
+}
+
+
+
+/* ______________________________________________end self________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------volunter page________________________________*/
+
+
+
+
+
+
+.content_volunter{
+	position: relative;
+	top: 110px;
+	
+	/*background-color: blue;*/
+	/*width: 40%;*/
+	float: left;
+	padding-bottom: 350px;
+}
+
+
+.side_volunter{
+	float: right;
+	position: relative;
+	top: 200px;
+	/*background-color: red;*/
+	/*width: 40%;*/
+	z-index: -5;
+	width: 450px;
+	/*background-color: red;*/
+	padding-right: 10px;
+	right: 30px;
+	
+	z-index: 0;
+}
+
+
+.side_content_volunter{
+	width: 400px;
+	/*background-color: yellow;*/
+	direction:ltr;
+	font-size: 16pt;
+	color:  #0B3861;
+	font-weight: bold;
+	
+}
+
+
+.ff{
+		background-color: aliceblue;
+
+}
+
+.f_vol{
+	width: 300px;
+	position: relative;
+	top: 60px;
+	left: 130px;
+	z-index:0;
+	height: 380px;
+	background-color: #0B3861;
+	border-radius: 20px;
+	
+}
+
+.vol{
+	/*float: right;*/
+	direction: rtl;
+	text-align: center;
+	
+}
+
+.vol input{
+width: 90%;
+	height: 30px;
+	border-radius: 6px;
+	font-size: 12pt;
+	color: black;
+	
+}
+.dis_slide{
+	position: absolute;
+	direction: rtl;
+	z-index: 10;
+	right: 10px;
+	top: -100px;
+	color: #0B3861;
+	font-size: 14pt;
+	font-weight: bold;
+	
+}
+
+/*------- slide show--------*/
+
+.slideshow{
+	width: 700px;
+	height: 400px;
+	overflow: hidden;
+}
+
+
+.middle{
+	position: absolute;
+	top: 280px;
+	left: 25%;
+	transform: translate(-50% , -50%);
+}
+
+
+
+.navigation{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+
+.bar{
+
+	width: 50px;
+	height: 10px;
+	border:2px  solid #0B3861;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+
+.bar:hover{
+	background-color:  #0B3861;
+	
+}
+
+
+input [name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+
+.slide{
+	width: 20%;
+	transition: 0.6s;
+	position: relative;
+	right: 50px;
+
+}
+
+.slide img{
+	width: 70%;
+	height: 100%;
+border-radius: 50%;
+	float: right;
+	right: 50px;
+	position: relative;
+} 
+
+
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+	margin-left: -21.8%;
+}
+
+#r3:checked ~ .s1{
+	margin-left: -42%;
+}
+
+
+/*---------- end slide show---------*/
+
+
+
+
+/*----------------------condition page-----------------------*/
+
+.side_condition{
+		float: right;
+	position: relative;
+	top: 130px;
+	/*background-color: red;*/
+	/*width: 40%;*/
+	z-index: 0;
+	width: 95%;
+	right: 2.5%;
+	
+}
+
+
+
+
+.side_content_condition{
+	
+		position: relative;
+	width: 99%;
+	/*background-color: yellow;*/
+	direction: rtl;
+	font-size: 12pt;
+	float: right;
+	
+	color: #0B3861;
+	font-weight: bold;
+	
+}
+
+.check_condition{
+	font-size: 16pt;
+}
+
+.link_akfal{
+	font-size: 20pt;
+}
+
+.link_akfal:hover{
+color: red;
+
+}
+
+/*------------------modal akfal-------------------*/
+
+.condition_model_container{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	background:rgb(1,50,77,0.3);
+	z-index: 1000;
+	
+	
+	/*transition: all 500ms ease;*/
+	
+	
+	
+}
+
+.condition_model_container:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.condition_model{
+	width: 350px;
+	height: 400px;
+	margin: auto;
+	position: absolute;
+	top: 100px; bottom: 0px;
+	right: 0px; left: 0px;
+	background: #0B3861;
+	border: 2px solid #222;
+	padding: 20px;
+	border-radius: 20px;
+	z-index: 1000;
+}
+
+
+.condition_model_heading{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	height: 60px;
+	margin-bottom: 30px;
+	color: white;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 20pt;
+	font-family: big john;
+	/*border-bottom: 2px solid #fefefe;*/
+	float: right;
+	direction: rtl;
+}
+
+
+.input_condition input[type="text"],input[type="password"],input[type="submit"]{
+	margin-bottom: 15px;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 5px;
+	height: 50px;
+	border: 0px;
+	font-family: georgia;
+	font-size: 11pt;
+	text-align: right;
+	direction: rtl;
+}
+
+
+
+.g_condition{
+	float: right;
+	direction: rtl;
+	font-size: 16pt;
+	color: white;
+}
+
+
+.condition_btnrig{
+	background-color:green;
+	color: white;
+	font-family: georgia;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 16pt;
+}
+
+
+.condition_close{
+	color: white;
+	position: absolute;
+	border: 2px solid #333;
+	padding: 7px 9px 11px 9px;
+	font-family: big john;
+	background: black;
+	text-decoration: none;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	/*transition: background 500ms;*/
+	
+	
+	
+	
+	
+}
+
+.condition_close:hover{
+	background: red;
+	cursor: pointer;
+}
+
+
+
+
+
+
+.condition_have_account{
+	
+	color :white;
+	display: inline-block;
+	margin-top: 0px;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+
+.condition_have_account:hover{
+	
+	color:red;
+}
+
+
+
+.select_condition{
+	width: 100%;
+	height: 50px;
+	font-size: 11pt;
+	text-align: center;
+	direction: rtl;
+	
+	
+}
